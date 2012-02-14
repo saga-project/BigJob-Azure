@@ -1,0 +1,13 @@
+[DEFAULT]
+# RE Manager settings
+arguments: +p4 $TEMP\NPT.conf
+total_number_replica: 16
+number_of_nodes: 20
+exchange_count  : 4
+stage_in_file : NPT.conf
+executable : approot\\resources\\namd\\namd2.exe
+working_directory: $TEMP
+temperature :  300 310 320 330 340 350 360 370 380 390 400 410 420 430 440 450
+adaptive_sampling: False
+adaptive_replica_size: True
+

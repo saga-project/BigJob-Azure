@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<ServiceConfiguration serviceName="BigJobService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*">
+  <Role name="BigjobAzureAgent">
+    <Instances count="2" />
+    <ConfigurationSettings>
+      <!--Setting name="DiagnosticsConnectionString" value="UseDevelopmentStorage=true" /-->
+      <Setting name="DiagnosticsConnectionString" value="DefaultEndpointsProtocol=https;AccountName=saga;AccountKey=cjOGY5SjG9uRNuvK4W0Yjzb9J3BMIPFs3an6pgAq8Wdj3xdJ85kXuo6zPfMArJ+ZIYhlgtRuoZ9FKsy5S2e4Fw==" />
+      <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=https;AccountName=saga;AccountKey=cjOGY5SjG9uRNuvK4W0Yjzb9J3BMIPFs3an6pgAq8Wdj3xdJ85kXuo6zPfMArJ+ZIYhlgtRuoZ9FKsy5S2e4Fw==" />
+      <!--Setting name="DataConnectionString" value="UseDevelopmentStorage=true"/-->
+      <Setting name="ApplicationName" value="bigjob" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.ActivationToken" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.Refresh" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.WaitForConnectivity" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.Upgrade" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.EnableDomainJoin" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainFQDN" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainControllerFQDN" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainAccountName" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainPassword" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainOU" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.Administrators" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainSiteName" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="saisaripalli" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEC2U9glpJd2RTWvjyZf+fb8wDQYJKoZIhvcNAQEBBQAEggEAMu/Qb0g/QG/FWoX7OR1vV4CN5mtAJzEZB6sBcDAAho45ZzNEB20YxKRZN1AYHKDA4YBx5N4j+6jKIXvW9Is0FjifBPyLNhtOun1V7WP+Y42GTXZljy2vP5RtWd1J5jvaZycTviL/oetoOep9CgAB8m1UKR2vGjzB8+w8oh0EKUqvsvq7CCJAU5Frg05B4uUu6Kl+PEu/g2sUII1eeGfljYNt0ROJqzdNJwwMiWkCGAJFrYYY1an4dPIbhnsDV5SORHx5oGBcqAOdr2Ca56U4InXA/G8Ks/HzIiBz9GO2JUkBE7cXfDbXUi1WmrMKtkNjfH7TUw1C7UnENNx1GiWP/jAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECNEuDDbpdDrcgBB+zgjrFYkF7+m1hKFxVFsz" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2012-12-12T23:59:59.0000000-06:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=saga;AccountKey=cjOGY5SjG9uRNuvK4W0Yjzb9J3BMIPFs3an6pgAq8Wdj3xdJ85kXuo6zPfMArJ+ZIYhlgtRuoZ9FKsy5S2e4Fw==" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="8C3B3971C8068B51AEE7ABFD69100CA924F96171" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
