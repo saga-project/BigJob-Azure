@@ -228,6 +228,7 @@ class ReManager():
             energy = [0 for i in range(0, numReplica)]
             flagJobDone = [ False for i in range(0, numReplica)]
             flagExchangeDone = [ False for i in range(0, numReplica)]
+            flagJobCount = [ False for i in range(0, numReplica)]
             numJobDone = 0
             print "\n" 
             #print "\n\n\n  ##################### Replica State Check at: " + time.asctime(time.localtime(time.time())) + " ########################"
@@ -244,40 +245,47 @@ class ReManager():
                                      + " Time since launch: " + str(time.time()-start) + " sec"
                     
                 if (str(state) == "Done") and (flagJobDone[irep] is False) :   
-                   print "(INFO) Replica " + "%d"%irep + " done"
+                   print "\n\n(INFO) Replica " + "%d"%irep + " done"
                    energy[irep] = self.get_energy(irep) ##todo get energy from right host
                    flagJobDone[irep] = True
                    numJobDone = numJobDone + 1
+                   flagJobCount[irep] = True
                    ####################################### Replica Exchange ##################################    
                    # replica exchange step        
-                   print "\n(INFO)   " + "replica_id:"+ str(irep)+ "  Now trying to look for an exchange ...." 
+                   print "\n(INFO)   " + "replica_id:"+ str(irep)+ " is in Done State " + " and looking for an exchange"
                    print "\n(INFO)  " + " Number of Job Done:  " + str(numJobDone) 
                    j=irep
                    frep=0
                    list=[]
-                   for frep in range(0,numReplica):
+                   for frep in range(0,numReplica-1):
                        running_job_frep = self.replica_jobs[frep] 
                        try:
                           state = running_job_frep.get_state()
                        except:
                           pass
                        if(str(state) == "Done" and (frep!=j) and (flagExchangeDone[frep] is False)):
-                          print "\n(INFO)" + "replica_id:" + str(irep) + "found: " + "replica_id:" + str(frep) + " Replica in Done state " + " Number of Job Done: "+ str(numJobDone)
+                          print "\n(INFO)" + "replica_id: " + str(irep) + " found " + "replica_id: " + str(frep) + " in done state " 
                           energy[frep] = self.get_energy(frep) ##todo get energy from right host
                           flagJobDone[frep] = True
                           flagExchangeDone[irep] = True
                           flagExchangeDone[frep] = True
-                          numJobDone=numJobDone + 1
+                          if(flagJobCount[frep] is False):
+                             numJobDone= numJobDone + 1
+                          else:
+                             pass
                           en_a = energy[frep]
                           en_b = energy[irep]
                           self.do_exchange(energy,frep, irep)
                           #list.append[frep]
-                          print "\n(INFO) replica_id:" + str(irep) + "exchanged temperature with: " + "replica_id:" + str(frep) + "Number of Job Done: "+ str(numJobDone)
+                          print "\n(INFO)  " + " Number of Job Done:  " + str(numJobDone) 
+                          print "\n(INFO) replica_id:" + str(irep) + " exchanged temperature with " + "replica_id: " + str(frep) + "\n\n" 
                           break
                        elif(frep==j):
-                          print "Checking the same replica........." + str(irep)
+                          print "\n Checking the same replica........." + str(irep)
+                       elif(str(state) == "Done" and (frep!=j) and (flagExchangeDone[frep] is True)):
+                         print "\n(INFO)" + "replica_id: " + str(frep) + " are in done state " + " and exchange is over  "
                        else:
-                          print "replica_id:" + str(frep) + "  Not in Done State "
+                          print "\n replica_id:" + str(frep) + "  Not in Done State \n "
                           #print "\n\n (INFO) In Exchange Lookup ##################### Replica State Check at: " + time.asctime(time.localtime(time.time())) + " ########################"
                            
                 elif(str(state)=="Failed"):
