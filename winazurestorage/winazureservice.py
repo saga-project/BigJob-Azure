@@ -129,7 +129,7 @@ def main():
     
     requestId = h.createDeployment( "BigJobService", "bigjob", "staging", 
                        "http://saga.blob.core.windows.net/namd-service/BigJobService.cspkg",
-                       "BigJobService/bin/Release/app.publish/ServiceConfiguration.cscfg", 2)
+                       "BigJobService/bin/Debug/app.publish/ServiceConfiguration.cscfg", 2)
     # wait for deployment to be done
     status = h.waitForRequest(requestId);
     

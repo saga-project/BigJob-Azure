@@ -8,13 +8,13 @@
 
   **********************************************************************************************
 -->
-<ServiceConfiguration serviceName="BigJobService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration">
+<ServiceConfiguration serviceName="BigJobService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*">
   <Role name="BigjobAzureAgent">
     <Instances count="4" />
     <ConfigurationSettings>
       <!--Setting name="DiagnosticsConnectionString" value="UseDevelopmentStorage=true" /-->
-      <Setting name="DiagnosticsConnectionString" value="DefaultEndpointsProtocol=https;AccountName=saga;AccountKey=mjOfcGpZxQtb2X4+B01LLUonLdcb9OOMBqwgeBNKP4m2Coo55padEXAjgigL45557MAiaJg0rMiJ+BhGvJakcw==" />
-      <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=https;AccountName=saga;AccountKey=mjOfcGpZxQtb2X4+B01LLUonLdcb9OOMBqwgeBNKP4m2Coo55padEXAjgigL45557MAiaJg0rMiJ+BhGvJakcw==" />
+      <Setting name="DiagnosticsConnectionString" value="DefaultEndpointsProtocol=https;AccountName=saga;AccountKey=cjOGY5SjG9uRNuvK4W0Yjzb9J3BMIPFs3an6pgAq8Wdj3xdJ85kXuo6zPfMArJ+ZIYhlgtRuoZ9FKsy5S2e4Fw==" />
+      <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=https;AccountName=saga;AccountKey=cjOGY5SjG9uRNuvK4W0Yjzb9J3BMIPFs3an6pgAq8Wdj3xdJ85kXuo6zPfMArJ+ZIYhlgtRuoZ9FKsy5S2e4Fw==" />
       <!--Setting name="DataConnectionString" value="UseDevelopmentStorage=true"/-->
       <Setting name="ApplicationName" value="bigjob" />
       <Setting name="Microsoft.WindowsAzure.Plugins.Connect.ActivationToken" value="" />
@@ -31,12 +31,13 @@
       <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainSiteName" value="" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="saisaripalli" />
-      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEGdeuzPXSaaORFPcBz1dVNgwDQYJKoZIhvcNAQEBBQAEggEAM0LUDRCaAvt0FASGZLG2pj/Z6x70+syNlCunJJ4WlIKVcwWTTsSNiL3u+F0c35lqaCt+3BoUIPZi4wOnUhlyPPuFwJQdYXQWWuaLG9ZD/rvWM/HBbBzzmGGPVG8reqJSqWWaB5ej1ooRJuijl84GqaMBA9cdi6VNg04rhLehh8brWRnYiFXPPl+X8om/1U19bSddVWUziBVPnAi41JwxzszYQwBPEfLcOf2t9z68L/RzmyZHvAJRiHfoqOUtkS5crXT9osMFjMThy25qnwG7jhqv6g/BIW7WjD7M6Kg+WeZxCFWCkfq63c0IAMzOFI+6/XWMntDWS9l6E1YALov0YzAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECGuNkPcqHHPRgBC1p00cL8CAh+c2ReSOrf39" />
-      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2011-12-12T23:59:59.0000000-06:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEC2U9glpJd2RTWvjyZf+fb8wDQYJKoZIhvcNAQEBBQAEggEAMu/Qb0g/QG/FWoX7OR1vV4CN5mtAJzEZB6sBcDAAho45ZzNEB20YxKRZN1AYHKDA4YBx5N4j+6jKIXvW9Is0FjifBPyLNhtOun1V7WP+Y42GTXZljy2vP5RtWd1J5jvaZycTviL/oetoOep9CgAB8m1UKR2vGjzB8+w8oh0EKUqvsvq7CCJAU5Frg05B4uUu6Kl+PEu/g2sUII1eeGfljYNt0ROJqzdNJwwMiWkCGAJFrYYY1an4dPIbhnsDV5SORHx5oGBcqAOdr2Ca56U4InXA/G8Ks/HzIiBz9GO2JUkBE7cXfDbXUi1WmrMKtkNjfH7TUw1C7UnENNx1GiWP/jAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECNEuDDbpdDrcgBB+zgjrFYkF7+m1hKFxVFsz" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2012-12-12T23:59:59.0000000-06:00" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=saga;AccountKey=cjOGY5SjG9uRNuvK4W0Yjzb9J3BMIPFs3an6pgAq8Wdj3xdJ85kXuo6zPfMArJ+ZIYhlgtRuoZ9FKsy5S2e4Fw==" />
     </ConfigurationSettings>
     <Certificates>
-      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="0579CC90DC09F84E2AC8709DD45EDCE02DD5EC28" thumbprintAlgorithm="sha1" />
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="8C3B3971C8068B51AEE7ABFD69100CA924F96171" thumbprintAlgorithm="sha1" />
     </Certificates>
   </Role>
 </ServiceConfiguration>

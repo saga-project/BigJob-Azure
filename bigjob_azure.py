@@ -87,6 +87,9 @@ class bigjob_azure():
         self.blob = BlobStorage(host = "blob.core.windows.net", 
                              account_name = self.account_name_storage, 
                              secret_key = self.secret_key)
+        """self.blob = BlobStorage(host = "127.0.0.1:10000", 
+                             account_name = self.account_name_storage, 
+                             secret_key = self.secret_key) """
         result = self.blob.create_container(self.app_id)
         logging.debug("Result of pilot job blob container creation: " + str(result))
         
@@ -102,7 +105,7 @@ class bigjob_azure():
         
         self.stopped = False
     
-    def start_azure_worker_roles(self, number=2):
+    def start_azure_worker_roles(self, number=4):
         self.stopped = False
         service_names = self.account_names_compute.split()
         results = []
@@ -174,7 +177,7 @@ class bigjob_azure():
     def start_pilot_job(self, 
                  lrms_url=None,                     # in future version one can specify a URL for a cloud (ec2:// vs. nimbus:// vs. eu://)
                  bigjob_agent_executable=None,      # n/a
-                 number_nodes=2,                    # number of images requested    
+                 number_nodes=4,                    # number of images requested    
                  queue=None,                        # n/a
                  project=None,                      # n/a
                  working_directory=None,            # working directory
@@ -194,7 +197,7 @@ class bigjob_azure():
         if self.start_azure_worker_roles(number_nodes):
              self.set_state(str(state.Running))
         else:
-             self.set_state(state.Failed)
+             self.set_state(state.Failed) 
         self.set_state(str(state.Running))
         
      
