@@ -201,7 +201,7 @@ class ReManager():
         print "\n"
         # reset replica number
                      
-        #print "############# spawn jobs ################"
+        print "############# spawn jobs ################"
         self.replica_jobs = []            
         start_time = time.time()
         replica_id = 0            
@@ -213,7 +213,7 @@ class ReManager():
            logging.debug("pilot job running - start " + str(self.total_number_replica) + " jobs.")
            for i in range (0, self.total_number_replica):
                     #self.stage_files([os.getcwd() + "/NPT.conf"], self.blob_container, replica_id)
-                    print "\n (INFO) ################ replica id  spawning ###########################  " + str(replica_id)
+                    #print "\n (INFO) ################ replica id  spawning ###########################  " + str(replica_id)
                     #pdb.set_trace()
                     temperature=self.prepare_NAMD_config(replica_id)
                     #print "\n (INFO) Temperature is : " + str(temperature)
