@@ -47,12 +47,8 @@ APPLICATION_NAME="bigjob"
 STATE = "state"
 JOB_DESCRIPTION = "jd"
 NODE_FILE = "nodefile"
-
 CONFIG_FILE="bigjob_azure.conf"
-
-
-
-
+COUNT = "count"
 
 class bigjob_azure():
     
@@ -191,7 +187,11 @@ class bigjob_azure():
         #self.blob.put_blob(self.app_id, STATE, str(state.Unknown), "text/plain")
         self.set_state(str(state.Unknown))
         logging.debug("set pilot state to: " + str(state.Unknown))
- 
+
+        ########## Set Count ###############
+        self.set_count(str(0)) 
+        logging.debug("set initial count to: " + str(0))
+
         # use service management api to spawn azure images
         logging.debug("init azure worker roles") 
         if self.start_azure_worker_roles(number_nodes):
@@ -200,9 +200,14 @@ class bigjob_azure():
              self.set_state(state.Failed) 
         self.set_state(str(state.Running))
         
-     
+    def set_count(self,cnt):
+        self.blob.put_blob(self.app_id, COUNT, cnt, "text/plain")
+
     def set_state(self, new_state):
         self.blob.put_blob(self.app_id, STATE, new_state, "text/plain")
+
+    def get_count(self):
+        return self.blob.get_blob(self.app_id,COUNT) 
     
     def get_state(self):        
         return self.blob.get_blob(self.app_id, STATE)
@@ -253,7 +258,7 @@ class bigjob_azure():
         json_jd = self.blob.get_blob(self.app_id, job_id)  
         jd_dict = json.loads(json_jd)
         return jd_dict["state"]
-    
+
     def get_blob_as_string(self, blob_name):
         return self.blob.get_blob(self.app_id, blob_name)
  

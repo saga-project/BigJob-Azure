@@ -121,6 +121,7 @@ class ReManager():
             items = line.split()
             if len(items) > 0:
                 if items[0] in ("ENERGY:"):
+                    
                     en = items[11]  
         print "(DEBUG) energy : " + str(en) + " from replica " + str(replica_id) 
         return eval(en)
@@ -162,6 +163,7 @@ class ReManager():
   
     def stop_bigjob(self):
         """ stop pilot job """
+        pdb.set_trace()
         self.bj.cancel()
   
     

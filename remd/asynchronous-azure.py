@@ -263,14 +263,14 @@ class ReManager():
 
 
             ############### Check the list length ################
-            print "\n ############### Check the list length ################ "
+            #print "\n ############### Check the list length ################ "
             while(len(list)>=2):    
-                print "\n List has Replicas for exchange " 
+                #print "\n List has Replicas for exchange " 
                 irep=0
                 frep=0
                 irep= list[0]
                 frep= list[1]
-                print "\n (INFO) Replicas looking for exchange are : " + str(irep) + " " + str(frep)
+                print "\n (INFO) Replicas looking for exchange are : " + str(irep) + " and " + str(frep)
                 en_a = energy[irep]
                 en_b = energy[frep]
                 self.do_exchange(energy,frep, irep)
@@ -294,7 +294,7 @@ class ReManager():
                   pass
                 list.pop(0)
                 list.pop(0)
-                print "\n Removed the Jobs : "                
+                print "\n Removed the " + "replica_id : " +str(irep) + " replica_id :" + str(frep)               
 
             if(iEX>= numEX):
               break

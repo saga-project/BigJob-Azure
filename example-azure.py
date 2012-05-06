@@ -7,7 +7,7 @@ from bigjob_azure import *
 import time
 import pdb
 
-NUMBER_JOBS=4
+NUMBER_JOBS=2
 
 
 """ Test Job Submission via Azure BigJob """
@@ -18,7 +18,7 @@ if __name__ == "__main__":
     # Parameter for BigJob 
     nodes = 2 # number nodes for agent
     # current_directory=os.getcwd() +"/agent"  # working directory for agent
-    pdb.set_trace();  
+    #pdb.set_trace();  
     # start pilot job (bigjob_agent)
     print "Start Pilot Job/BigJob in the cloud. "
     start = time.time()
@@ -34,10 +34,11 @@ if __name__ == "__main__":
     # Submit SubJob through BigJob
     jd = description() #TODO: move to SAGA JD
     jd.executable = "approot\\resources\\namd\\Replica_Agent"
+    #jd.executable = "approot\\resources\\namd\\namd2"
     jd.number_of_processes = "1"
     jd.spmd_variation = "single"
-    #jd.arguments = ["+p1", "NPT.conf"]
-    jd.arguments = [""]
+    jd.arguments = ["+p1", "NPT.conf"]
+    #jd.arguments = [""]
     jd.working_directory = "approot\\resources\\namd\\"
     jd.output = "stdout"
     jd.error = "stderr"
