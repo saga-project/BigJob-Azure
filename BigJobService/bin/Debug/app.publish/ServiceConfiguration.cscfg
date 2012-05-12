@@ -10,7 +10,7 @@
 -->
 <ServiceConfiguration serviceName="BigJobService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*">
   <Role name="BigjobAzureAgent">
-    <Instances count="4" />
+    <Instances count="12" />
     <ConfigurationSettings>
       <!--Setting name="DiagnosticsConnectionString" value="UseDevelopmentStorage=true" /-->
       <Setting name="DiagnosticsConnectionString" value="DefaultEndpointsProtocol=https;AccountName=saga;AccountKey=cjOGY5SjG9uRNuvK4W0Yjzb9J3BMIPFs3an6pgAq8Wdj3xdJ85kXuo6zPfMArJ+ZIYhlgtRuoZ9FKsy5S2e4Fw==" />

@@ -231,10 +231,10 @@ class ReManager():
     
         print "started " + "%d"%numReplica + " of " + str(self.total_number_replica) + " in this round." 
         print "Time for spawning " + "%d"%numReplica + " replica: " + str(end_time-start_time) + " s"
-
+        
+        print "\n (EXCHANGE COUNT) INFO : " + str(iEX)
         print  ####################################### async-job monitoring step ###############################
         while (iEX < numEX):
-            print "\n (EXCHANGE COUNT) INFO : " + str(iEX)
             print "\n##################### Replica State Check at: " + time.asctime(time.localtime(time.time())) + " ########################"
             for irep in range(0, numReplica):
                 running_job = self.replica_jobs[irep]
@@ -256,6 +256,7 @@ class ReManager():
                   break
             time.sleep(5) 
             iEX=int(self.bj.get_count())
+            print "\n (EXCHANGE COUNT) INFO : " + str(iEX)
             
         print "REMD Runtime: " + str(time.time()-REMD_start) + " sec; Pilot URL: " + str(self.bj.pilot_url) \
                 + "; number replica: " + str(self.total_number_replica) 

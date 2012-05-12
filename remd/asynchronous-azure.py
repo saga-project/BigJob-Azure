@@ -210,7 +210,7 @@ class ReManager():
            logging.debug("pilot job running - start " + str(self.total_number_replica) + " jobs.")
            for i in range (0, self.total_number_replica):
                     #self.stage_files([os.getcwd() + "/NPT.conf"], self.blob_container, replica_id)
-                    print "\n (INFO) ################ replica id  spawning ###########################  " + str(replica_id)
+                    #print "\n (INFO) ################ replica id  spawning ###########################  " + str(replica_id)
                     self.prepare_NAMD_config(replica_id)
                     jd = self.get_job_description(replica_id)
                     new_job = self.submit_subjob(jd)
@@ -247,12 +247,12 @@ class ReManager():
                                      + " Time since launch: " + str(time.time()-REMD_start) + " sec"
                     
                 if ((str(state) == "Done") and (flagJobDone[irep] is False) and (iEX< numEX)):   
-                   print "\n\n(INFO) Replica " + "%d"%irep + " done"
+                   #print "\n\n(INFO) Replica " + "%d"%irep + " done"
                    energy[irep] = self.get_energy(irep)
                    list.append(irep)
                    flagJobDone[irep]= True
                    total_number_of_namd_jobs = total_number_of_namd_jobs + 1
-                   print "\n Total Namd Jobs are: " + str(total_number_of_namd_jobs)
+                   #print "\n Total Namd Jobs are: " + str(total_number_of_namd_jobs)
 
                 elif(str(state)=="Failed"):
                   self.stop_glidin_jobs()
@@ -263,28 +263,29 @@ class ReManager():
 
 
             ############### Check the list length ################
-            #print "\n ############### Check the list length ################ "
             while(len(list)>=2):    
                 #print "\n List has Replicas for exchange " 
                 irep=0
                 frep=0
                 irep= list[0]
                 frep= list[1]
-                print "\n (INFO) Replicas looking for exchange are : " + str(irep) + " and " + str(frep)
+                #print "\n (INFO) Replicas looking for exchange are : " + str(irep) + " and " + str(frep)
                 en_a = energy[irep]
                 en_b = energy[frep]
                 self.do_exchange(energy,frep, irep)
-                print "\n(INFO) replica_id:" + str(irep) + " exchanged temperature with " + "replica_id: " + str(frep) + "\n\n" 
+                #print "\n(INFO) replica_id:" + str(irep) + " exchanged temperature with " + "replica_id: " + str(frep) + "\n\n" 
                 iEX=iEX + 1        
-                print "\n (Replica Exchange INFO) iEX=" + str(iEX)
+                #print "\n (Replica Exchange INFO) iEX=" + str(iEX)
                             
                 if(iEX< numEX):
                    flagJobDone[frep]= False
+                   self.prepare_NAMD_config(frep)
                    jd = self.get_job_description(frep)
                    new_job = self.submit_subjob(jd)
                    self.replica_jobs[frep]= new_job
                    print "\n (INFO) Replica " + "%d"%frep + " started (Num of Exchange Done = %d)"%(iEX) 
                    flagJobDone[irep]= False
+                   self.prepare_NAMD_config(irep)
                    jd = self.get_job_description(irep)
                    new_job = self.submit_subjob(jd)
                    self.replica_jobs[irep]= new_job
@@ -294,7 +295,7 @@ class ReManager():
                   pass
                 list.pop(0)
                 list.pop(0)
-                print "\n Removed the " + "replica_id : " +str(irep) + " replica_id :" + str(frep)               
+                #print "\n Removed the " + "replica_id : " +str(irep) + " replica_id :" + str(frep)               
 
             if(iEX>= numEX):
               break

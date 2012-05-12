@@ -123,7 +123,7 @@ class ReManager():
             if len(items) > 0:
                 if items[0] in ("ENERGY:"):
                     en = items[11]  
-        print "(DEBUG) energy : " + str(en) + " from replica " + str(replica_id) 
+        #print "(DEBUG) energy : " + str(en) + " from replica " + str(replica_id) 
         return eval(en)
 
     def do_exchange(self, energy, irep, jrep):
@@ -209,11 +209,14 @@ class ReManager():
         if state.lower()== "running":
            logging.debug("pilot job running - start " + str(self.total_number_replica) + " jobs.")
            for i in range (0, self.total_number_replica):
-                    #self.stage_files([os.getcwd() + "/NPT.conf"], self.blob_container, replica_id)
-                    print "\n (INFO) ################ replica id  spawning ###########################  " + str(replica_id)
                     self.prepare_NAMD_config(replica_id)
+
+                    ############## Tfile: Time to Transfer Files and submit job #########################
+                    Tfile=time.time()
                     jd = self.get_job_description(replica_id)
                     new_job = self.submit_subjob(jd)
+                    print "(INFO) Time to stage files : " + str(time.time()-Tfile)
+
                     #pdb.set_trace()
                     self.replica_jobs.insert(replica_id, new_job)
                     replica_id = replica_id + 1
@@ -234,6 +237,11 @@ class ReManager():
         #numJobDone = 0
         print "\n" 
         total_number_of_namd_jobs = 0
+        times={}
+        Rtimes={}
+        TState=[]
+        TFind=[]
+        Tmd=[]
         while (iEX < numEX):
             print "\n (EXCHANGE COUNT) INFO : " + str(iEX)
             print "\n##################### Replica State Check at: " + time.asctime(time.localtime(time.time())) + " ########################"
@@ -245,15 +253,28 @@ class ReManager():
                    pass
                 print "replica_id: " + str(irep) + " job: " + str(running_job) + " received state: " + str(state)\
                                      + " Time since launch: " + str(time.time()-REMD_start) + " sec"
-                    
+                if(str(state) == "Running"):
+                   if Rtimes.has_key(irep):
+                      pass
+                   else:
+                      Rtimes[irep]=time.time()
+
                 if ((str(state) == "Done") and (iEX < numEX)):   
-                   print "\n(INFO) Replica " + "%d"%irep + " done"
+
+                   ################ Tfind: Time to find a partner after reaching Done state ##########
+                   if times.has_key(irep):
+                      pass 
+                   else:
+                      times[irep]=time.time()
+                      if Rtimes.has_key(irep): 
+                        print "\n $$$$$$$$$$ (Run Time INFO) of " + str(irep) + " is : " + str(times[irep]-Rtimes[irep])
+                        del Rtimes[irep]
+                      else:
+                        print "\n $$$$$$$$$$ (Run Time INFO) of" +str(irep) + " is : " + str(times[irep]-0)
+                        
                    energy[irep] = self.get_energy(irep) ##todo get energy from right host
                    total_number_of_namd_jobs = total_number_of_namd_jobs + 1
                    ####################################### Replica Exchange ##################################    
-                   # replica exchange step        
-                   print "\n(INFO)   " + "replica_id:"+ str(irep)+ " is in Done State " + " and looking for an exchange"
-                   #print "\n(INFO)  " + " Number of Job Done:  " + str(numJobDone) 
                    j=irep
                    frep=0
                    list=[]
@@ -263,34 +284,75 @@ class ReManager():
                           state = running_job_frep.get_state()
                        except:
                           pass
+                       if(str(state) == "Running"):
+                           if Rtimes.has_key(frep):
+                              pass
+                           else:
+                              Rtimes[frep]=time.time()
+
                        if(str(state) == "Done" and (frep!=j)):
-                          print "\n(INFO)" + "replica_id: " + str(irep) + " found " + "replica_id: " + str(frep) + " in done state " 
+                          estfrep=time.time()
+                          if times.has_key(frep):
+                             times[frep]=estfrep-times[frep]
+                             if Rtimes.has_key(frep):
+                                print "\n $$$$$$$$$$ (Run Time INFO) of " + str(frep) + " is : " + str(estfrep-Rtimes[frep])
+                                Tmd.append(estfrep-Rtimes[frep])
+                                del Rtimes[frep]
+                             else:
+                                print "\n $$$$$$$$$$ (Run Time INFO) of " + str(frep) + " is : " + str(estfrep-0)
+                                Tmd.append(estfrep-0)
+                          else:
+                             times[frep]=0
+                             if Rtimes.has_key(frep):
+                                print "\n $$$$$$$$$$ (Run Time INFO) of " + str(frep) + " is : " + str(estfrep-Rtimes[frep])
+                                Tmd.append(estfrep-Rtimes[frep])
+                                del Rtimes[frep]
+                             else:
+                                print "\n $$$$$$$$$$ (Run Time INFO) of " + str(frep) + " is : " + str(estfrep-0)
+                                Tmd.append(estfrep-0)
+
+                          times[j]=estfrep-times[j]
+
+                          print "\n (INFO) Tfind Time for replica_id: "+ str(j) +" is " + str(times[j])
+                          print "\n (INFO) Tfind Time for replica_id: "+ str(frep) +" is " + str(times[frep])
+                          TFind.append(times[j])
+                          TFind.append(times[frep])
+                          del times[j]
+                          del times[frep]
+
                           energy[frep] = self.get_energy(frep) ##todo get energy from right host
                           total_number_of_namd_jobs = total_number_of_namd_jobs + 1
                           en_a = energy[frep]
                           en_b = energy[irep]
                           self.do_exchange(energy,frep, irep)
-                          print "\n(INFO) replica_id:" + str(irep) + " exchanged temperature with " + "replica_id: " + str(frep) + "\n" 
+                          #print "\n(INFO) replica_id:" + str(irep) + " exchanged temperature with " + "replica_id: " + str(frep) + "\n" 
                           iEX=iEX + 1        
-                          print "\n (Replica Exchange INFO) iEX=" + str(iEX)
+                          #print "\n (Replica Exchange INFO) iEX=" + str(iEX)
                           if(iEX< numEX):
+
+                               ############# Tstate: Time to Update states in Azure Blob and Queue #############
+                               Tstate=time.time()
+                               self.prepare_NAMD_config(frep)
                                jd = self.get_job_description(frep)
                                new_job = self.submit_subjob(jd)
                                self.replica_jobs[frep]= new_job
                                print "\n (INFO) Replica " + "%d"%frep + " started "
+                               self.prepare_NAMD_config(irep)
                                jd = self.get_job_description(irep)
                                new_job = self.submit_subjob(jd)
                                self.replica_jobs[irep]= new_job
                                print "\n (INFO) Replica " + "%d"%irep + " started"  
+                               print "(Tstate INFO) " + str(time.time()-Tstate)
+                               TState.append(time.time()-Tstate)
                           else:
                                pass
                           break
                        elif(frep==j):
-                          print "\n Checking the same replica........." + str(irep)
+                          pass
                        elif(iEX>=numEX):
                           break
                        else:
-                          print "\n replica_id:" + str(frep) + "  Not in Done State \n "
+                          pass
 
                 elif(str(state)=="Failed"):
                   self.stop_glidin_jobs()
@@ -303,7 +365,10 @@ class ReManager():
         print "REMD Runtime: " + str(time.time()-REMD_start) + " sec; Pilot URL: " + str(self.bj.pilot_url) \
                 + "; number replica: " + str(self.total_number_replica) \
                 + "; number namd jobs: " + str(total_number_of_namd_jobs)
-        # stop gliding job        
+        # stop gliding job     
+        print "\n (Tmd) : " + str(Tmd)
+        print "\n (TFind) : " + str(TFind)
+        print "\n (TState) : " + str(TState)   
         self.stop_bigjob()
 
     

@@ -1,0 +1,947 @@
+/home/saisaripalli/BigJob-Azure/remd
+read configfile: remd_20.conf
+Start Bigjob
+
+
+############# spawn jobs ################
+Pilot: http://saga.blob.core.windows.net/bigjob state: Running
+
+ (DEBUG) temperature is changing to 300 from 300 for rep0
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 0.713067054749
+(INFO) Replica 1 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 310 from 300 for rep1
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 0.904628038406
+(INFO) Replica 2 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 320 from 310 for rep2
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 0.715177059174
+(INFO) Replica 3 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 330 from 320 for rep3
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 0.771208047867
+(INFO) Replica 4 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 340 from 330 for rep4
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 0.690112113953
+(INFO) Replica 5 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 350 from 340 for rep5
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 0.868861913681
+(INFO) Replica 6 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 360 from 350 for rep6
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 2.51510500908
+(INFO) Replica 7 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 370 from 360 for rep7
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 0.678667068481
+(INFO) Replica 8 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 380 from 370 for rep8
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 0.685710191727
+(INFO) Replica 9 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 390 from 380 for rep9
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 1.17541193962
+(INFO) Replica 10 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 400 from 390 for rep10
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 2.70730495453
+(INFO) Replica 11 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 410 from 400 for rep11
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 1.07085609436
+(INFO) Replica 12 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 420 from 410 for rep12
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 1.00101399422
+(INFO) Replica 13 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 430 from 420 for rep13
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 1.51500201225
+(INFO) Replica 14 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 440 from 430 for rep14
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 0.71534705162
+(INFO) Replica 15 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 450 from 440 for rep15
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 1.93783903122
+(INFO) Replica 16 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 460 from 450 for rep16
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 1.32321596146
+(INFO) Replica 17 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 470 from 460 for rep17
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 3.9970998764
+(INFO) Replica 18 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 480 from 470 for rep18
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 0.781969070435
+(INFO) Replica 19 started (Num of Exchange Done = 0)
+
+ (DEBUG) temperature is changing to 490 from 480 for rep19
+submit job: http://saga.blob.core.windows.net/bigjob
+(INFO) Time to stage files : 7.16342020035
+(INFO) Replica 20 started (Num of Exchange Done = 0)
+started 20 of 20 in this round.
+Time for spawning 20 replica: 32.1949000359 s
+
+
+
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:02:38 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 127.850121021 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 128.024416924 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 128.203794003 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 128.395153046 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 128.569987059 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 128.765901089 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 129.005492926 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 129.203579903 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 129.382190943 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 129.549220085 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 129.724217892 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 129.919874907 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 130.171751022 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 130.342452049 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 130.510279894 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 130.707014084 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 130.901650906 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 131.092101097 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 131.278245926 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 131.478404045 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:02:42 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 131.660857916 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 131.861284971 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 132.071229935 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 132.248389959 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 132.437012911 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 132.639594078 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 132.812994003 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 132.991159916 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 133.175364017 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 133.371912003 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 133.583200932 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 133.787131071 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 133.962776899 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 134.140990973 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 134.315424919 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 134.505939007 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 134.69469595 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 134.881485939 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 135.042089939 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 135.219682932 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:02:45 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 135.411992073 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 135.584060907 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 135.760965109 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 136.037331104 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 136.258537054 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 136.441001892 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 136.616338968 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 136.791284084 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 136.954479933 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 137.121234894 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 137.307189941 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 137.50701499 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 137.704013109 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 138.880311012 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 139.053898096 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 139.235100031 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 139.446204901 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 139.675733089 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 139.836105108 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 140.077152014 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:02:50 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 140.272953033 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 140.462042093 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 140.661314964 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 140.873434067 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 141.047130108 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 141.221107006 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 141.487993956 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 141.706779003 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 141.894361973 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 142.078047037 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 142.250287056 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 142.456502914 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 142.633610964 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 142.87755394 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 143.070550919 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 143.236632109 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 143.414896011 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 143.58279705 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 143.757945061 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 143.949430943 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:02:54 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 144.165206909 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 144.338572025 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 144.53047204 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 144.718625069 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 144.897325039 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 145.105803013 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 145.288753986 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 145.462640047 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 145.856417894 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 146.040087938 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 146.231764078 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 146.405785084 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 146.588136911 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 146.804639101 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 146.983006954 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 147.163975954 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 147.341383934 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 147.521249056 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 147.729473114 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 147.913933992 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:02:58 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 148.100280046 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 148.293946981 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 148.46409297 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 148.774338961 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 148.958256006 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 149.188421011 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 149.379640102 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 149.561645031 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 149.835758924 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 150.014549017 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 150.220232964 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 150.413125992 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 150.610608101 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 150.793715954 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 150.995687008 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 151.221056938 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 151.398875952 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 151.573342085 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 151.752083063 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 151.929517031 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:03:02 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 152.200048923 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 152.364146948 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 245.758524895 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 245.98982811 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 246.197767973 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 246.391267061 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 246.784296989 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 246.992047071 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 267.018397093 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 307.064409018 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 327.097676992 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 337.333491087 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 337.521025896 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 337.702318907 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 337.892637968 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 338.100961924 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 338.290421009 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 338.504040003 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 338.690654993 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 338.896714926 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:06:09 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 339.187693119 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 339.386121988 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 339.591918945 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 339.771831036 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 339.959158897 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 340.170027018 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 340.337610006 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 340.534634113 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 340.710472107 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 340.914958 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 341.088854074 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 341.27374506 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 341.490889072 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 341.69144702 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 341.905743122 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 347.81862402 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 347.99692297 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 348.219105005 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 348.41040206 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 348.589932919 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:06:19 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 348.785624027 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 348.995351076 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 349.218252897 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 349.465176105 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 349.655031919 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 349.832955122 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 350.033634901 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 350.210858107 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 350.387707949 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 350.551770926 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 350.730765104 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 350.909571886 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 351.116466045 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 351.2932899 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 351.676364899 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 351.870125055 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 352.069976091 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 352.244632959 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 352.438299894 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 352.627373934 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:06:23 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 352.813764095 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 353.020296097 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 353.220997095 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 356.486562967 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 356.708417892 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 356.901968002 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 357.09019208 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 357.271245956 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 357.494622946 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 360.778332949 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 360.945171118 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 361.115427017 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 370.306605101 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 370.475065947 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 370.670542002 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 370.84604907 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 371.037318945 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 371.213032961 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 371.392215014 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 371.568715096 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:06:42 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 371.755646944 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 371.934252024 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 372.121931076 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 372.331573963 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 372.520422935 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 372.705823898 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 372.901091099 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 373.120649099 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 373.306135893 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 373.48596406 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 373.669095993 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 374.112176895 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 374.303214073 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 374.496665001 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 374.670869112 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 374.849729061 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 375.028235912 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 375.205790997 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 375.377716064 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 375.554779053 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:06:46 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 375.750610113 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 375.934828043 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 376.111726999 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 376.315630913 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 376.496658087 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 376.708214045 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 376.899307966 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 377.076781988 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 377.247066021 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 377.426994085 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 377.603178978 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 377.786883116 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 377.966941118 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 378.150590897 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 378.323328972 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 378.498742104 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 378.670663118 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 378.844871998 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 379.021570921 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 379.265923977 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:06:49 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 379.439033031 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 379.606729984 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 379.780121088 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 379.960021019 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 380.156182051 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 380.338274956 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 380.552283049 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 380.74355197 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 380.911325932 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 381.095144987 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 381.27679801 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 381.48644805 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 381.6649611 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 381.950752974 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 382.170469999 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 382.351648092 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 382.705645084 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 382.873888016 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 383.056720972 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 383.257282972 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:06:53 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 383.439584017 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 383.629724979 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 383.813745975 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 383.992703915 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 384.171705008 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 384.365778923 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 384.566282988 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 384.74436903 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 384.917656898 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 385.135236979 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 385.313860893 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 385.488702059 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 385.814201117 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 385.995408058 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 386.172163963 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 386.352792025 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 386.523695946 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 386.698834896 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 386.868989944 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 387.072937012 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:06:57 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 387.331720114 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 387.503950119 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 387.687567949 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 387.872657061 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 388.096651077 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 388.280324936 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 388.458620071 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 388.881948948 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 389.082988977 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 389.265238047 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 389.44540906 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 389.632990122 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 389.805838108 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 389.994029045 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 390.186875105 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 390.386063099 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 395.576267004 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 395.743971109 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 395.962124109 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 396.140728951 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:07:06 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 396.335514069 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 396.531919003 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 396.709217072 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 396.88363409 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 397.128400087 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 397.317831039 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 397.503998995 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 397.701570988 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 397.897268057 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 398.072309017 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 398.250438929 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 398.427630901 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 398.605653048 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 398.783167124 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 398.961057901 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 399.148019075 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 399.337016106 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 399.510808945 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Unknown Time since launch: 399.688529968 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 493.062872887 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:08:43 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 493.250619888 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 493.454128981 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 493.634279966 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 493.811532021 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 587.603277922 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 587.799384117 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 587.97475791 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 588.154247046 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 588.322977066 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 588.499489069 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 588.71182704 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 588.882659912 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 589.066037893 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 589.25425005 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 589.442570925 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 589.627315044 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 589.809566021 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 589.998415947 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 590.19136095 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 590.3708601 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:10:21 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 590.550843954 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 590.763036013 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 590.932096004 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 591.117185116 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 591.311427116 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 591.497219086 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 591.681344032 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 591.884166956 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 592.073040009 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 592.263216019 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 592.451730013 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 592.980293036 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 593.160434961 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 593.392703056 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 593.582135916 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 593.853435993 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 594.050189972 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 594.229413033 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 594.415332079 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 594.594876051 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:10:25 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 594.779983044 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 594.951803923 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 595.11542511 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 595.364259005 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 595.58892107 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 595.780155897 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 595.983972073 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 596.160801888 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 596.387372971 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 596.5983181 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 596.818881035 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 597.002401114 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 597.222423077 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 597.39992404 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 597.753880024 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 597.933950901 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 598.145149946 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 598.317958117 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 598.500509024 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 599.140119076 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:10:29 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 599.316339016 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 599.481441021 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 599.65674901 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 602.865297079 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 603.055202961 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 603.273672104 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 612.469198942 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 612.64526701 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 613.102454901 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 613.284852028 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 613.464751959 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 613.646260023 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 613.823636055 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 614.002418041 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 614.289546013 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 614.463232994 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 614.639682055 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 614.805176973 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 614.989869118 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 615.162041903 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:10:45 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 615.371496916 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 615.549679041 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 615.730998039 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 615.913265944 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 616.35849905 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 616.53323102 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 616.72101903 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 616.900779963 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 617.098728895 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 617.281613111 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 617.679411888 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 618.010873079 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 618.198822021 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 618.379859924 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 618.584741116 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 618.761260033 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 618.957216978 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 619.158395052 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 619.342798948 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 619.522632122 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:10:50 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 619.697842121 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 619.8734231 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 620.049348116 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 620.216521978 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 620.400235891 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 620.587162971 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 620.76375103 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 620.952270031 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 621.179088116 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 621.361829996 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 621.544842958 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 621.735392094 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 621.913964033 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 622.121629953 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 622.331123114 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 622.538682938 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 622.772084951 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 622.944749117 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 623.145066977 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 623.3427701 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:10:54 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 623.515563965 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 623.694870949 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 623.899828911 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 624.076666117 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 624.323358059 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 624.511372089 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 624.701267958 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 624.870629072 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 625.127532959 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 625.326225996 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 625.496066093 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 625.6817801 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 625.859143972 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 626.076708078 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 626.268863916 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 626.517992973 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 626.709232092 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 626.887671947 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 627.067051888 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 627.242734909 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:10:57 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 627.407865047 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 627.578272104 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 627.793339014 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 628.070166111 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 628.247092009 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 628.429078102 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 628.626106024 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 628.806960106 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 628.991250992 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 629.174263 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 629.352760077 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 629.54211092 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 629.73771596 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 629.933228016 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 630.112941027 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 630.320849895 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 630.51316309 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 630.691021919 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 630.885998964 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 631.068177938 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:11:01 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 631.255373955 sec
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 631.624445915 sec
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-18d5c266-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 631.800252914 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 631.97933507 sec
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-19b65db2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 632.158679962 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 632.331408978 sec
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-1aa562cc-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 632.521668911 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 632.703258038 sec
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-1c8dfa36-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 632.888902903 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 638.072689056 sec
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-1dab0800-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 638.258347988 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-1f48547e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 638.436165094 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 638.627366066 sec
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-2085608e-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 638.809647083 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 638.997703075 sec
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-21da80e0-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 639.251651049 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 639.51158905 sec
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-23cce802-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 639.699034929 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 640.028774023 sec
+replica_id: 19 job: http://saga.blob.core.windows.net/bigjob/subjob-26aa76a2-9bce-11e1-aac2-080027002d7c received state: Running Time since launch: 640.206743956 sec
+
+ (EXCHANGE COUNT) INFO : 0
+
+##################### Replica State Check at: Fri May 11 20:11:10 2012 ########################
+replica_id: 0 job: http://saga.blob.core.windows.net/bigjob/subjob-17dd48ac-9bce-11e1-aac2-080027002d7c received state: Done Time since launch: 640.399589062 sec
+
+ $$$$$$$$$$ (Run Time INFO) of 0 is : 264.648983002
+
+ $$$$$$$$$$ (Run Time INFO) of 11 is : 147.264498949
+
+ (INFO) Waiting Time for replica_id: 0 is 95.7478430271
+
+ (INFO) Waiting Time for replica_id: 11 is 0
+(DEBUG) delta = 5705.932951 en_a = -149126.585800 from rep 11 en_b = -161805.459300 from rep 0
+
+ (DEBUG) temperature is changing to 410 from 490 for rep11
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 11 started 
+
+ (DEBUG) temperature is changing to 300 from 410 for rep0
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 0 started
+(Tstate INFO) 94.6611258984
+replica_id: 1 job: http://saga.blob.core.windows.net/bigjob/subjob-184acada-9bce-11e1-aac2-080027002d7c received state: Done Time since launch: 831.387829065 sec
+
+ $$$$$$$$$$ (Run Time INFO) of 1 is : 443.88383007
+
+ $$$$$$$$$$ (Run Time INFO) of 2 is : 338.676274061
+
+ (INFO) Waiting Time for replica_id: 1 is 0.92271399498
+
+ (INFO) Waiting Time for replica_id: 2 is 0
+(DEBUG) delta = 58.763562 en_a = -159557.976000 from rep 2 en_b = -160716.383500 from rep 1
+
+ (DEBUG) temperature is changing to 320 from 300 for rep2
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 2 started 
+
+ (DEBUG) temperature is changing to 310 from 320 for rep1
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 1 started
+(Tstate INFO) 1.33479404449
+replica_id: 2 job: http://saga.blob.core.windows.net/bigjob/subjob-cf257f24-9bcf-11e1-aac2-080027002d7c received state: Running Time since launch: 834.153841019 sec
+replica_id: 3 job: http://saga.blob.core.windows.net/bigjob/subjob-1943b01e-9bce-11e1-aac2-080027002d7c received state: Done Time since launch: 834.319299936 sec
+
+ $$$$$$$$$$ (Run Time INFO) of 3 is : 340.507760048
+
+ $$$$$$$$$$ (Run Time INFO) of 4 is : 248.178753138
+
+ (INFO) Waiting Time for replica_id: 3 is 1.46277999878
+
+ (INFO) Waiting Time for replica_id: 4 is 0
+(DEBUG) delta = 39.439754 en_a = -157235.544900 from rep 4 en_b = -158114.908800 from rep 3
+
+ (DEBUG) temperature is changing to 340 from 310 for rep4
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 4 started 
+
+ (DEBUG) temperature is changing to 330 from 340 for rep3
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 3 started
+(Tstate INFO) 1.38044786453
+replica_id: 4 job: http://saga.blob.core.windows.net/bigjob/subjob-d1382e7e-9bcf-11e1-aac2-080027002d7c received state: Running Time since launch: 837.658668995 sec
+replica_id: 5 job: http://saga.blob.core.windows.net/bigjob/subjob-1a2077d8-9bce-11e1-aac2-080027002d7c received state: Done Time since launch: 837.865878105 sec
+
+ $$$$$$$$$$ (Run Time INFO) of 5 is : 250.066516876
+
+ $$$$$$$$$$ (Run Time INFO) of 6 is : 251.516438961
+
+ (INFO) Waiting Time for replica_id: 5 is 1.62530207634
+
+ (INFO) Waiting Time for replica_id: 6 is 0
+(DEBUG) delta = 29.056318 en_a = -155372.644000 from rep 6 en_b = -156100.177000 from rep 5
+
+ (DEBUG) temperature is changing to 360 from 330 for rep6
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 6 started 
+
+ (DEBUG) temperature is changing to 350 from 360 for rep5
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 5 started
+(Tstate INFO) 6.35101699829
+replica_id: 6 job: http://saga.blob.core.windows.net/bigjob/subjob-d36ff00a-9bcf-11e1-aac2-080027002d7c received state: Running Time since launch: 846.370135069 sec
+replica_id: 7 job: http://saga.blob.core.windows.net/bigjob/subjob-1c266be6-9bce-11e1-aac2-080027002d7c received state: Done Time since launch: 846.767328024 sec
+
+ $$$$$$$$$$ (Run Time INFO) of 7 is : 258.613071918
+
+ $$$$$$$$$$ (Run Time INFO) of 8 is : 260.732236147
+
+ (INFO) Waiting Time for replica_id: 7 is 2.28788709641
+
+ (INFO) Waiting Time for replica_id: 8 is 0
+(DEBUG) delta = 43.874381 en_a = -152608.602900 from rep 8 en_b = -153834.454500 from rep 7
+
+ (DEBUG) temperature is changing to 380 from 350 for rep8
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 8 started 
+
+ (DEBUG) temperature is changing to 370 from 380 for rep7
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 7 started
+(Tstate INFO) 10.3734490871
+replica_id: 8 job: http://saga.blob.core.windows.net/bigjob/subjob-d9232aa8-9bcf-11e1-aac2-080027002d7c received state: Running Time since launch: 859.955382109 sec
+replica_id: 9 job: http://saga.blob.core.windows.net/bigjob/subjob-1cf717e6-9bce-11e1-aac2-080027002d7c received state: Done Time since launch: 860.137119055 sec
+
+ $$$$$$$$$$ (Run Time INFO) of 9 is : 271.637630939
+
+ $$$$$$$$$$ (Run Time INFO) of 10 is : 273.744463921
+
+ (INFO) Waiting Time for replica_id: 9 is 2.31917285919
+
+ (INFO) Waiting Time for replica_id: 10 is 0
+(DEBUG) delta = 55.218046 en_a = -150027.362200 from rep 10 en_b = -151739.139300 from rep 9
+
+ (DEBUG) temperature is changing to 400 from 370 for rep10
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 10 started 
+
+ (DEBUG) temperature is changing to 390 from 400 for rep9
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 9 started
+(Tstate INFO) 1.41080594063
+replica_id: 10 job: http://saga.blob.core.windows.net/bigjob/subjob-e1221a52-9bcf-11e1-aac2-080027002d7c received state: Running Time since launch: 864.404367924 sec
+replica_id: 11 job: http://saga.blob.core.windows.net/bigjob/subjob-95d8bfba-9bcf-11e1-aac2-080027002d7c received state: Running Time since launch: 864.587099075 sec
+replica_id: 12 job: http://saga.blob.core.windows.net/bigjob/subjob-1fec236a-9bce-11e1-aac2-080027002d7c received state: Done Time since launch: 864.765053988 sec
+
+ $$$$$$$$$$ (Run Time INFO) of 12 is : 275.699028969
+
+ $$$$$$$$$$ (Run Time INFO) of 13 is : 278.619968176
+
+ (INFO) Waiting Time for replica_id: 12 is 3.10915803909
+
+ (INFO) Waiting Time for replica_id: 13 is 0
+(DEBUG) delta = 27.475453 en_a = -146797.179000 from rep 13 en_b = -147783.240900 from rep 12
+
+ (DEBUG) temperature is changing to 430 from 390 for rep13
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 13 started 
+
+ (DEBUG) temperature is changing to 420 from 430 for rep12
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 12 started
+(Tstate INFO) 1.52735614777
+replica_id: 13 job: http://saga.blob.core.windows.net/bigjob/subjob-e45edc28-9bcf-11e1-aac2-080027002d7c received state: Running Time since launch: 869.917280912 sec
+replica_id: 14 job: http://saga.blob.core.windows.net/bigjob/subjob-216cd914-9bce-11e1-aac2-080027002d7c received state: Done Time since launch: 870.090131044 sec
+
+ $$$$$$$$$$ (Run Time INFO) of 14 is : 280.647583008
+
+ $$$$$$$$$$ (Run Time INFO) of 15 is : 284.026407957
+
+ (INFO) Waiting Time for replica_id: 14 is 3.5635509491
+
+ (INFO) Waiting Time for replica_id: 15 is 0
+(DEBUG) delta = 32.340202 en_a = -144516.207500 from rep 15 en_b = -145788.683200 from rep 14
+
+ (DEBUG) temperature is changing to 450 from 420 for rep15
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 15 started 
+
+ (DEBUG) temperature is changing to 440 from 450 for rep14
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 14 started
+(Tstate INFO) 1.36509990692
+replica_id: 15 job: http://saga.blob.core.windows.net/bigjob/subjob-e7c8ab00-9bcf-11e1-aac2-080027002d7c received state: Running Time since launch: 875.514636993 sec
+replica_id: 16 job: http://saga.blob.core.windows.net/bigjob/subjob-230299da-9bce-11e1-aac2-080027002d7c received state: Done Time since launch: 875.691723108 sec
+
+ $$$$$$$$$$ (Run Time INFO) of 16 is : 285.882221937
+
+ $$$$$$$$$$ (Run Time INFO) of 17 is : 289.316843987
+
+ (INFO) Waiting Time for replica_id: 16 is 3.623472929
+
+ (INFO) Waiting Time for replica_id: 17 is 0
+(DEBUG) delta = 26.615752 en_a = -142093.592900 from rep 17 en_b = -143237.092500 from rep 16
+
+ (DEBUG) temperature is changing to 470 from 440 for rep17
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 17 started 
+
+ (DEBUG) temperature is changing to 460 from 470 for rep16
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 16 started
+(Tstate INFO) 1.37652301788
+replica_id: 17 job: http://saga.blob.core.windows.net/bigjob/subjob-eb2cd348-9bcf-11e1-aac2-080027002d7c received state: Running Time since launch: 881.218974113 sec
+replica_id: 18 job: http://saga.blob.core.windows.net/bigjob/subjob-26313c10-9bce-11e1-aac2-080027002d7c received state: Done Time since launch: 881.406322002 sec
+
+ $$$$$$$$$$ (Run Time INFO) of 18 is : 291.214960098
+
+ $$$$$$$$$$ (Run Time INFO) of 19 is : 394.250193119
+
+ (INFO) Waiting Time for replica_id: 18 is 5.90684604645
+
+ (INFO) Waiting Time for replica_id: 19 is 0
+(DEBUG) delta = 18.338801 en_a = -140187.677000 from rep 19 en_b = -141044.813200 from rep 18
+
+ (DEBUG) temperature is changing to 490 from 460 for rep19
+submit job: http://saga.blob.core.windows.net/bigjob
+
+ (INFO) Replica 19 started 
+
+ (DEBUG) temperature is changing to 480 from 490 for rep18
+submit job: http://saga.blob.core.windows.net/bigjob
+Traceback (most recent call last):
+  File "async-remd-azure.py", line 377, in <module>
+    re_manager.run_REMDg()
+  File "async-remd-azure.py", line 332, in run_REMDg
+    new_job = self.submit_subjob(jd)
+  File "async-remd-azure.py", line 153, in submit_subjob
+    sj.submit_job(jd)
+  File "../bigjob_azure.py", line 313, in submit_job
+    self.job_id=self.bigjob.add_subjob(jd)
+  File "../bigjob_azure.py", line 238, in add_subjob
+    result2 = self.queue.put_message(self.app_id, job_id)
+  File "/home/saisaripalli/BigJob-Azure/winazurestorage/winazurestorage.py", line 166, in put_message
+    return e.code
+AttributeError: 'URLError' object has no attribute 'code'
+Stop Glide-Ins

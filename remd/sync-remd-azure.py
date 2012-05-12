@@ -186,12 +186,21 @@ class ReManager():
         """ Main loop running replica-exchange """
         start = time.time()
         numEX = self.exchange_count    
-        ofilename = "sync-remd-temp-4R-4M-16c.out"
+        #ofilename = "sync-remd-temp-4R-4M-16c.out"
         print "Start Bigjob"
         self.bj = self.start_bigjob(self.number_of_nodes)
         if self.bj==None or self.bj.get_state_detail()=="Failed":
             return       
-       
+        TotalTfile=[] 
+        TotalTState=[]
+        TotalTw=[]
+        Tmd=[]
+
+        AvgTfile=[]
+        AvgTstate=[]
+        AvgTw=[]
+        Tmd=[]
+
         iEX = 0
         total_number_of_namd_jobs = 0
         while 1:
@@ -209,11 +218,15 @@ class ReManager():
             if state.lower()== "running":
                 logging.debug("pilot job running - start " + str(self.total_number_replica) + " jobs.")
                 for i in range (0, self.total_number_replica):
-                    #self.stage_files([os.getcwd() + "/NPT.conf"], self.blob_container, replica_id)
-                    ################ replica job spawning ###########################  
                     self.prepare_NAMD_config(replica_id)
+
+                    ############## Tfile: Time to Transfer Files and submit job #########################
+                    Tfile=time.time()
                     jd = self.get_job_description(replica_id)
                     new_job = self.submit_subjob(jd)
+                    
+                    print "(INFO) Time to stage files : " + str(time.time()-Tfile)
+
                     #pdb.set_trace()
                     self.replica_jobs.insert(replica_id, new_job)
                     replica_id = replica_id + 1
@@ -222,16 +235,17 @@ class ReManager():
             end_time = time.time()        
             # contains number of started replicas
             numReplica = len(self.replica_jobs)
-    
             print "started " + "%d"%numReplica + " of " + str(self.total_number_replica) + " in this round." 
             print "Time for spawning " + "%d"%numReplica + " replica: " + str(end_time-start_time) + " s"
+            TotalTfile.append(end_time-start_time) 
 
             ####################################### Wating for job termination ###############################
             # job monitoring step
             energy = [0 for i in range(0, numReplica)]
             flagJobDone = [ False for i in range(0, numReplica)]
             numJobDone = 0
-    
+            list=[] 
+            Rtimes={} ## Run time of Replica
             print "\n" 
             while 1:    
                 print "\n##################### Replica State Check at: " + time.asctime(time.localtime(time.time())) + " ########################"
@@ -243,8 +257,22 @@ class ReManager():
                         pass
                     print "replica_id: " + str(irep) + " job: " + str(running_job) + " received state: " + str(state)\
                                          + " Time since launch: " + str(time.time()-start) + " sec"
+                    if(str(state) == "Running"):
+                        if Rtimes.has_key(irep):
+                           pass
+                        else:
+                           Rtimes[irep]=time.time()
+
                     if (str(state) == "Done") and (flagJobDone[irep] is False) :   
                         print "(INFO) Replica " + "%d"%irep + " done"
+                        if Rtimes.has_key(irep):
+                           Rtimes[irep]=time.time()-Rtimes[irep]
+                           Tmd.append(Rtimes[irep])
+                        else:
+                           Rtimes[irep]=0
+                           Tmd.append(Rtimes[irep])
+
+                        list.append(time.time())
                         energy[irep] = self.get_energy(irep) ##todo get energy from right host
                         flagJobDone[irep] = True
                         numJobDone = numJobDone + 1
@@ -254,9 +282,10 @@ class ReManager():
                         sys.exit(1)
                 
                 if numJobDone == numReplica:
-                        break
+                   TotalTw.append(list.pop()-list[0])
+                   print "\n (INFO) Waiting time Tw is : " + str(list.pop()-list[0])
+                   break
                 time.sleep(15)
-    
             ####################################### Replica Exchange ##################################    
             # replica exchange step        
             print "\n(INFO) Now exchange step...."
@@ -266,18 +295,20 @@ class ReManager():
                 self.do_exchange(energy, irep, irep+1)
     
             iEX = iEX + (numReplica/2)
+            Tstate=time.time()
             output_str = "%5d-th EX :"%iEX
             for irep in range(0, numReplica):
                 output_str = output_str + "  %s"%self.temperatures[irep]
             
             print "\n\nExchange result : "
             print output_str + "\n\n"
-            
-            ofile = open(ofilename,'a')
+            TotalTState.append(time.time()-Tstate)
+            print "\n (INFO TState) is : " + str(time.time()-Tstate)
+            """ofile = open(ofilename,'a')
             for irep in range(0, numReplica):
                 ofile.write(" %s"%(self.temperatures[irep]))
             ofile.write(" \n")            
-            ofile.close()
+            ofile.close() """
     
             if iEX == numEX:
                 break
@@ -287,6 +318,10 @@ class ReManager():
                 + "; number replica: " + str(self.total_number_replica) \
                 + "; number namd jobs: " + str(total_number_of_namd_jobs)
         # stop gliding job        
+        print "\n (Tmd) : " + str(Tmd)
+        print "\n (TotalTw) : " + str(TotalTw)
+        print "\n (TotalTfile) : " + str(TotalTfile)
+        print "\n (TotalTState) : " + str(TotalTState)
         self.stop_bigjob()
 
     
